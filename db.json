@@ -1,7 +1,7 @@
 {
   "employdata": [
     {
-      "firstname": "bad",
+      "firstname": "good",
       "lastname": "getu",
       "email": "frraol03@gmail.com",
       "dob": "2024-04-02T21:00:00.000Z",
@@ -71,30 +71,6 @@
       "experiance": 7,
       "salary": 45600,
       "id": "d9c1"
-    },
-    {
-      "firstname": "ggg",
-      "lastname": "he",
-      "email": "he@gmail.com",
-      "dob": "2024-04-01T21:00:00.000Z",
-      "gender": "male",
-      "educationlevel": "Deploma",
-      "companyname": "hhol",
-      "experiance": 2,
-      "salary": 78000,
-      "id": "4e4e"
-    },
-    {
-      "id": "c39c",
-      "firstname": "endegena",
-      "lastname": "lela",
-      "email": "en@gmail.com",
-      "dob": "2024-04-06T21:00:00.000Z",
-      "gender": "male",
-      "educationlevel": "Matric",
-      "companyname": "bb",
-      "experiance": 3,
-      "salary": 4000
     }
   ]
 }
