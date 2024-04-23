@@ -1,6 +1,3 @@
-
-
-
 <app-header></app-header>
 <div class="main-body">
 <mat-form-field>
@@ -11,7 +8,6 @@
 <div class="table-container">
   <table class="list-table" mat-table [dataSource]="dataSource" matSort>
 
-    <!-- ID Column -->
     <ng-container matColumnDef="id" >
       <th mat-header-cell *matHeaderCellDef mat-sort-header > ID </th>
       <td mat-cell *matCellDef="let row, let i=index"> {{i + 1}} </td>
@@ -21,14 +17,12 @@
   <th mat-header-cell *matHeaderCellDef mat-sort-header>First Name </th>
   <td mat-cell *matCellDef="let row"> {{row.firstname}}</td>
 </ng-container>
-<!-- Progress Column -->
 
 <ng-container matColumnDef="lastname">
 <th mat-header-cell *matHeaderCellDef mat-sort-header>Last Name </th>
 <td mat-cell *matCellDef="let row"> {{row.lastname}}</td>
 </ng-container>
 
-<!-- Fruit Column -->
 <ng-container matColumnDef="email">
   <th mat-header-cell *matHeaderCellDef mat-sort-header> Email </th>
   <td mat-cell *matCellDef="let row"> {{row.email}}</td>

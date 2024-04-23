@@ -1,12 +1,12 @@
 .alternate-row:nth-child(odd) {
-  background-color: #fff; /* White for even rows */
+  background-color: #fff;
 
 }
 .main-body{
   padding: 3px 5px;
 }
 .alternate-row:nth-child(even) {
-  background-color: #041014; /* Black for odd rows */
+  background-color: #041014;
   color: white;
 }
 .alternate-row1{

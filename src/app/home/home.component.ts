@@ -1,9 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { AddComponent } from '../add/add.component';
 import { EmployeService } from '../service/employe.service';
-import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
-import {MatSort, MatSortModule} from '@angular/material/sort';
+import {MatPaginator} from '@angular/material/paginator';
+import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 
 import { CoreService } from '../core/core.service'
@@ -14,7 +13,7 @@ interface Employee {
   firstname: string;
   lastname: string;
   email: string;
-  dob: Date; // Or string depending on your data format
+  dob: Date; //
   gender: string;
   educatiomlevel: string;
   companyname: string;
@@ -27,19 +26,15 @@ interface Employee {
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
-  displayedColumns: string[] = ['id', 'firstname', 'lastname', 'email', 'dob', 'gender', 'educationlevel', 'companyname',
+  displayedColumns: string[] = [
+    'id', 'firstname', 'lastname', 'email', 'dob', 'gender', 'educationlevel', 'companyname',
     'experiance', 'salary', 'action'
   ];
   dataSource!: MatTableDataSource<Employee>;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
-
-
-
-  constructor(private dialog: MatDialog, private getempservi: EmployeService, private coreservice: CoreService) {}
-
-
+constructor(private dialog: MatDialog, private getempservi: EmployeService, private coreservice: CoreService) {}
 
 ngOnInit(): void {
     this.getEmployList()
@@ -70,7 +65,7 @@ applyFilter(event: Event) {
 }
 
 deleteEmployList(id : number) {
-  const confirmation = window.confirm("Are you sure you want to delete this employee?");
+  const confirmation = window.confirm("Are you sure you want to delete this employe?");
  if (confirmation) {
   this.getempservi.deleteEmploye(id).subscribe({
     next : (res: any) => {
