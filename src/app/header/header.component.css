@@ -1,0 +1,11 @@
+
+.example-spacer {
+  flex: 1 1 auto;
+  color: white;
+}
+
+.mat-header{
+  background-color: #041014;
+  padding: 40px 20px;
+}
+

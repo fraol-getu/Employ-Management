@@ -1,0 +1,21 @@
+
+
+.main-body {
+  padding-top: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0 25px;
+  height: 100svh;
+  mat-form-field {
+    width: 100%;
+  }
+}
+.mat-header{
+  background-color: black;
+}
+/* .table-container{
+  background-color: #434a54 ;
+} */
+.button-container {
+  display: flex;
+}
