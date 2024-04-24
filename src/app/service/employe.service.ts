@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-const url : any = "https://json-wiov.onrender.com/employdata/"
+const url : any = "http://localhost:3000/employdata/"
 @Injectable({
   providedIn: 'root'
 
