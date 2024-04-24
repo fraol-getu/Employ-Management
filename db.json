@@ -49,8 +49,7 @@
       "salary": 4500
     },
     {
-      "id": "bae3",
-      "firstname": "kirine",
+      "firstname": "kirubel",
       "lastname": "gizaw",
       "email": "kirubel@gmail.com",
       "dob": "2024-04-08T21:00:00.000Z",
@@ -58,7 +57,8 @@
       "educationlevel": "Degree",
       "companyname": "abkem",
       "experiance": 4,
-      "salary": 13000
+      "salary": 13000,
+      "id": "bae3"
     }
   ]
 }

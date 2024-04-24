@@ -2,10 +2,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+
+const url : any = "https://json-wiov.onrender.com/employdata/"
 @Injectable({
   providedIn: 'root'
+
 })
-const url = "https://json-wiov.onrender.com/employdata/"
+
 
 export class EmployeService {
   constructor(private http: HttpClient) { }
