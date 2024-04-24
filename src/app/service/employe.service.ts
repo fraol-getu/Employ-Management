@@ -5,20 +5,21 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class EmployeService {
+const url = "https://json-wiov.onrender.com/employdata/"
 
+export class EmployeService {
   constructor(private http: HttpClient) { }
   addEmployee(data: any): Observable<any> {
-    return this.http.post('http://localhost:3000/employdata', data)
+    return this.http.post(url, data)
   }
   editEmployee(id: number, data: any,): Observable<any> {
-    return this.http.put('http://localhost:3000/employdata/' + id, data)
+    return this.http.put(url + id, data)
   }
 
   getEmploye() {
-    return this.http.get('http://localhost:3000/employdata')
+    return this.http.get(url)
   }
   deleteEmploye(id: number) {
-    return this.http.delete('http://localhost:3000/employdata/' + id)
+    return this.http.delete(url + id)
   }
 }

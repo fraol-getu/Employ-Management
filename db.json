@@ -59,18 +59,6 @@
       "companyname": "abkem",
       "experiance": 4,
       "salary": 13000
-    },
-    {
-      "firstname": "tsio n",
-      "lastname": "getu",
-      "email": "tsiongetu@gmail.com",
-      "dob": "2024-04-01T21:00:00.000Z",
-      "gender": "male",
-      "educationlevel": "Degree",
-      "companyname": "harvard",
-      "experiance": 7,
-      "salary": 45600,
-      "id": "d9c1"
     }
   ]
 }
